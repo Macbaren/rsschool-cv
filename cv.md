@@ -29,6 +29,35 @@ I value simple content structure, clean design patterns, and thoughtful interact
 
 ---
 
+### Code example
+
+Take a look at my solution to one of the codewars katas: 4kuy Most frequently used words in a text
+
+Write a function that, given a string of text (possibly with punctuation and line-breaks), returns an array of the top-3 most occurring words, in descending order of the number of occurrences.
+
+```javascript
+function topThreeWords(text) {
+  const clean = text
+    .replace(/[\/|&;:.$%@"<>()+,]/g, '')
+    .toLowerCase()
+    .split(' ')
+    .filter((it) => it !== '')
+    .filter((it) => it !== "'");
+  const obj = {};
+  for (let i = 0; i < clean.length; i += 1) {
+    if (obj[clean[i]]) obj[clean[i]] += 1;
+    else obj[clean[i]] = 1;
+  }
+
+  return Object.entries(obj)
+    .sort((a, b) => b[1] - a[1])
+    .map((it) => it[0])
+    .splice(0, 3);
+}
+```
+
+---
+
 ### My Recent Work
 
 Here are a few design projects I've worked on recently:  
@@ -36,6 +65,12 @@ Here are a few design projects I've worked on recently:
 [React Quiz](https://react-quiz-b00d2.firebaseapp.com/)  
 [Github user searcher](https://git-repo-searcher.herokuapp.com/)  
 [Personal Blog Angular](https://macbaren-blog.web.app/)
+
+### Languages
+
+- Belarusian - native
+- Russian - proficient
+- English - B1
 
 Want to see more? Email me  
 macbaren123@gmail.com
@@ -50,7 +85,7 @@ macbaren123@gmail.com
 <a href="https://www.linkedin.com/in/andrey-macbaren/"><img height="30" src="images/linkedin.png?raw=true"></a>&nbsp;&nbsp;
 <a href="https://twitter.com/macbarenI"><img height="30" src="images/twitter.png?raw=true"></a>&nbsp;&nbsp;
 <a href="https://t.me/macbaren124"><img height="30" src="images/telegram.png?raw=true"></a>&nbsp;&nbsp;
-<a href="https://www.codewars.com/users/Macbaren/badges/micro"><img height="30" src="images/codewars.png?raw=true"></a>&nbsp;&nbsp;
+<a href="https://www.codewars.com/users/Macbaren"><img height="30" src="https://www.codewars.com/users/Macbaren/badges/micro"></a>&nbsp;&nbsp;
 </p>
 <p align='center'>
 Handcrafted by me (c)
