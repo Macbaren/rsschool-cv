@@ -34,7 +34,7 @@ I value simple content structure, clean design patterns, and thoughtful interact
 Here are a few design projects I've worked on recently:  
 [Todo App](https://react-hooks-6af17.firebaseapp.com/)  
 [React Quiz](https://react-quiz-b00d2.firebaseapp.com/)  
-[Github user searcher](https://git-repo-searcher.herokuapp.com/)
+[Github user searcher](https://git-repo-searcher.herokuapp.com/)  
 [Personal Blog Angular](https://macbaren-blog.web.app/)
 
 Want to see more? Email me  
