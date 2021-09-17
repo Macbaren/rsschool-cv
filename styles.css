@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(70deg, rgb(164, 164, 247), rgb(230, 205, 209));
+}
+
+td {
+  text-align: center;
+  padding: 0.4rem;
+}
+
+footer > p {
+  text-align: center;
+}
+
+.avatar {
+  width: 8rem;
+  float: right;
+}
