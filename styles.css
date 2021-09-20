@@ -7,11 +7,77 @@ td {
   padding: 0.4rem;
 }
 
+header {
+  overflow: hidden;
+}
+
 footer > p {
   text-align: center;
 }
 
+iframe {
+  width: 30rem;
+  height: 17rem;
+}
+
+.main p {
+  text-align: justify;
+}
+
+p {
+  box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+  background-color: antiquewhite;
+  padding: 1rem;
+}
+
+.container > div {
+  padding: 2rem;
+}
+
+.side {
+  text-align: center;
+  background-color: rgb(204, 205, 206);
+  background-clip: border-box;
+  border-radius: 0.3rem;
+}
+
 .avatar {
   width: 8rem;
-  float: right;
+}
+
+@media screen and (max-width: 50em) {
+  .main p,
+  th,
+  td,
+  code {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .main p,
+  th,
+  td,
+  code {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .main p,
+  th,
+  td,
+  code {
+    font-size: 0.3em;
+  }
 }
