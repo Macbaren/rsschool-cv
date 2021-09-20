@@ -41,8 +41,7 @@
             ><img alt="" height="30" src="images/telegram.png?raw=true" /></a
           >&nbsp;&nbsp;
           <a href="https://www.codewars.com/users/Macbaren" target="_blank"
-          ><img alt=""
-            height="30"
+          ><img class="cw" alt=""
             src="https://www.codewars.com/users/Macbaren/badges/micro" /></a
           >&nbsp;&nbsp;
         </p>
@@ -122,24 +121,24 @@
           descending order of the number of occurrences.
         </p>
         <pre><code>
-        function topThreeWords(text) {
-          const clean = text
-            .replace(/[\/|&;:.$%@"&lt;>()+,]/g, '')
-            .toLowerCase()
-            .split(' ')
-            .filter((it) => it !== '')
-            .filter((it) => it !== "'");
-          const obj = {};
-          for (let i = 0; i &lt; clean.length; i += 1) {
-            if (obj[clean[i]]) obj[clean[i]] += 1;
-            else obj[clean[i]] = 1;
-          }
+function topThreeWords(text) {
+  const clean = text
+    .replace(/[\/|&;:.$%@"&lt;>()+,]/g, '')
+    .toLowerCase()
+    .split(' ')
+    .filter((it) => it !== '')
+    .filter((it) => it !== "'");
+  const obj = {};
+  for (let i = 0; i &lt; clean.length; i += 1) {
+    if (obj[clean[i]]) obj[clean[i]] += 1;
+    else obj[clean[i]] = 1;
+  }
 
-          return Object.entries(obj)
-            .sort((a, b) => b[1] - a[1])
-            .map((it) => it[0])
-            .splice(0, 3);
-          }
+  return Object.entries(obj)
+    .sort((a, b) => b[1] - a[1])
+    .map((it) => it[0])
+    .splice(0, 3);
+  }
         }</code></pre>
 
         <hr />
@@ -160,7 +159,7 @@
 
         <hr />
 
-        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe> -->
 
         <hr />
       </section>

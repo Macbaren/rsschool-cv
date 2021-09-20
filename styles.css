@@ -16,8 +16,7 @@ footer > p {
 }
 
 iframe {
-  width: 30rem;
-  height: 17rem;
+  width: 40%;
 }
 
 .main p {
@@ -49,6 +48,7 @@ p {
   background-color: rgb(204, 205, 206);
   background-clip: border-box;
   border-radius: 0.3rem;
+  width: 30%;
 }
 
 .avatar {
@@ -56,28 +56,54 @@ p {
 }
 
 @media screen and (max-width: 50em) {
-  .main p,
+  p,
   th,
   td,
+  li,
+  h1,
+  h2,
+  h3,
   code {
     font-size: 0.7em;
+  }
+  .container > div {
+    padding: 1rem;
   }
 }
 
 @media screen and (max-width: 40em) {
-  .main p,
+  p,
   th,
   td,
+  li,
+  h1,
+  h2,
+  h3,
   code {
     font-size: 0.5em;
+  }
+  .avatar,
+  .cw {
+    width: 6rem;
+  }
+  .container > div {
+    padding: 0.5rem;
   }
 }
 
 @media screen and (max-width: 30em) {
-  .main p,
+  p,
   th,
   td,
+  li,
+  h1,
+  h2,
+  h3,
   code {
     font-size: 0.3em;
+  }
+  .avatar,
+  .cw {
+    width: 4rem;
   }
 }
