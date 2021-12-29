@@ -1,1 +1,1 @@
-https://Macbaren.github.io/rsschool-cv/cv
+https://Macbaren.github.io/rsschool-cv/
