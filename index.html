@@ -8,168 +8,177 @@
     <title>MacbarenCV</title>
   </head>
   <body>
-    <header>
-      <p>
-        <img class="avatar" alt="avatar" src="images/logo.jpg?raw=true" />
-      </p>
+    <section class="container">
+      <div class="side">
+        <p class="avatar-block">
+          <img class="avatar" alt="avatar" src="images/logo.jpg?raw=true" />
+        </p>
+        <h3>Languages</h3>
+        <ul>
+          <li>Belarusian - native</li>
+          <li>Russian - proficient</li>
+          <li>English - B1</li>
+        </ul>
+        <hr>
+        <p>
+          Want to see more? Email me<br />
+          macbaren123@gmail.com
+        </p>
+        <hr>
+        <p>
+          Interested in collaborating or investing?
+          <br />
+          I’m always open to discussing product design work or partnership opportunities
+          <br />
+          <hr>
+          <a href="https://www.linkedin.com/in/andrey-macbaren/" target="_blank"
+            ><img alt="" height="30" src="images/linkedin.png?raw=true" /></a
+          >&nbsp;&nbsp;
+          <a href="https://twitter.com/macbarenI" target="_blank"
+            ><img alt="" height="30" src="images/twitter.png?raw=true" /></a
+          >&nbsp;&nbsp;
+          <a href="https://t.me/macbaren124" target="_blank"
+            ><img alt="" height="30" src="images/telegram.png?raw=true" /></a
+          >&nbsp;&nbsp;
+          <a href="https://www.codewars.com/users/Macbaren" target="_blank"
+          ><img class="cw" alt=""
+            src="https://www.codewars.com/users/Macbaren/badges/micro" /></a
+          >&nbsp;&nbsp;
+        </p>
+      </div>
+      <div class="main">
+        <header>
+        <h1>Hi folks 🖐️,</h1>
 
-      <h1>Hi folks 🖐️,</h1>
+        <h2>I’m Andrey Macbaren</h2>
 
-      <h2>I’m Andrey Macbaren</h2>
+        <h3>Nice to meet you!</h3>
 
-      <h3>Nice to meet you!</h3>
-
-      <p>
-        Since beginning my journey as a freelance developer nearly 5 years ago,
-        I’ve done remote work for agencies, consulted for startups, and
-        collaborated with talented people to create digital products for both
-        business and consumer use. I’m quietly confident, naturally curious, and
-        perpetually working on improving my chops one design problem at a time
-      </p>
-
+        <p>
+          Since beginning my journey as a freelance developer nearly 5 years ago,
+          I’ve done remote work for agencies, consulted for startups, and
+          collaborated with talented people to create digital products for both
+          business and consumer use. I’m quietly confident, naturally curious, and
+          perpetually working on improving my chops one design problem at a time
+        </p>
+      </header>
       <hr />
-    </header>
+      <section class="about">
+        <h2>Briefly about me</h2>
+        <p>
+          <em><strong>Front-end Developer</strong></em
+          ><br />
+          I like to code things from scratch, and enjoy bringing ideas to life in
+          the browser
+        </p>
 
-    <section class="about">
-      <h2>Briefly about me</h2>
+        <p>
+          <em><strong>Designer</strong></em
+          ><br />
+          I value simple content structure, clean design patterns, and thoughtful
+          interactions.
+        </p>
+
+        <p>
+          <del
+            ><em><strong>Mentor😶</strong></em></del
+          ><br />
+          <del
+            >I genuinely care about people, and love helping fellow designers work
+            on their craft.</del
+          >
+        </p>
+
+        <hr />
+
+        <table>
+          <tr>
+            <th>Things I enjoy designing</th>
+            <th>Languages I speak</th>
+            <th>Experiences I draw from:</th>
+          </tr>
+          <tr>
+            <td>UX, UI, Web, Mobile, Apps</td>
+            <td>HTML, Pug, Slim, CSS, Scss</td>
+            <td>UX/UI, Product design, Freelancing</td>
+          </tr>
+        </table>
+
+        <hr />
+      </section>
+
+      <section class="codexample">
+        <h3>Code example</h3>
+
+        <p>
+          Take a look at my solution to one of the codewars katas: 4kuy Most
+          frequently used words in a text
+        </p>
+
+        <p>
+          Write a function that, given a string of text (possibly with punctuation
+          and line-breaks), returns an array of the top-3 most occurring words, in
+          descending order of the number of occurrences.
+        </p>
+        <pre><code>
+function topThreeWords(text) {
+  const clean = text
+    .replace(/[\/|&;:.$%@"&lt;>()+,]/g, '')
+    .toLowerCase()
+    .split(' ')
+    .filter((it) => it !== '')
+    .filter((it) => it !== "'");
+  const obj = {};
+  for (let i = 0; i &lt; clean.length; i += 1) {
+    if (obj[clean[i]]) obj[clean[i]] += 1;
+    else obj[clean[i]] = 1;
+  }
+
+  return Object.entries(obj)
+    .sort((a, b) => b[1] - a[1])
+    .map((it) => it[0])
+    .splice(0, 3);
+  }
+        }</code></pre>
+
+        <hr />
+      </section>
+
+      <section class="bio">
+        <h3>My Recent Work</h3>
+
+        <p>
+          Here are a few design projects I’ve worked on recently:<br />
+          <a href="https://react-hooks-6af17.firebaseapp.com/">Todo App</a><br />
+          <a href="https://react-quiz-b00d2.firebaseapp.com/">React Quiz</a><br />
+          <a href="https://git-repo-searcher.herokuapp.com/"
+            >Github user searcher</a
+          ><br />
+          <a href="https://macbaren-blog.web.app/">Personal Blog Angular</a>
+        </p>
+
+        <hr />
+
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+
+        <hr />
+      </section>
+
+      <footer>
+
+        <p>
+          <a href="https://rs.school/js/" target="_blank"
+            ><img alt="" height="30" src="https://rs.school/images/rs_school_js.svg?raw=true"/></a
+          >&nbsp;&nbsp;
+        </p>
       <p>
-        <em><strong>Front-end Developer</strong></em
-        ><br />
-        I like to code things from scratch, and enjoy bringing ideas to life in
-        the browser
+        Handcrafted by me (c)
+        <a href="https://github.com/Macbaren">Macbaren</a>
+        2021
       </p>
-
-      <p>
-        <em><strong>Designer</strong></em
-        ><br />
-        I value simple content structure, clean design patterns, and thoughtful
-        interactions.
-      </p>
-
-      <p>
-        <del
-          ><em><strong>Mentor😶</strong></em></del
-        ><br />
-        <del
-          >I genuinely care about people, and love helping fellow designers work
-          on their craft.</del
-        >
-      </p>
-
-      <hr />
-
-      <table>
-        <tr>
-          <th>Things I enjoy designing</th>
-          <th>Languages I speak</th>
-          <th>Experiences I draw from:</th>
-        </tr>
-        <tr>
-          <td>UX, UI, Web, Mobile, Apps</td>
-          <td>HTML, Pug, Slim, CSS, Scss</td>
-          <td>UX/UI, Product design, Freelancing</td>
-        </tr>
-      </table>
-
-      <hr />
+      </footer>
+      </div>
+      
     </section>
-
-    <section class="codexample">
-      <h3>Code example</h3>
-
-      <p>
-        Take a look at my solution to one of the codewars katas: 4kuy Most
-        frequently used words in a text
-      </p>
-
-      <p>
-        Write a function that, given a string of text (possibly with punctuation
-        and line-breaks), returns an array of the top-3 most occurring words, in
-        descending order of the number of occurrences.
-      </p>
-      <pre><code>
-      function topThreeWords(text) {
-        const clean = text
-          .replace(/[\/|&;:.$%@"&lt;>()+,]/g, '')
-          .toLowerCase()
-          .split(' ')
-          .filter((it) => it !== '')
-          .filter((it) => it !== "'");
-        const obj = {};
-        for (let i = 0; i &lt; clean.length; i += 1) {
-          if (obj[clean[i]]) obj[clean[i]] += 1;
-          else obj[clean[i]] = 1;
-        }
-
-        return Object.entries(obj)
-          .sort((a, b) => b[1] - a[1])
-          .map((it) => it[0])
-          .splice(0, 3);
-        }
-      }</code></pre>
-
-      <hr />
-    </section>
-
-    <section class="bio">
-      <h3>My Recent Work</h3>
-
-      <p>
-        Here are a few design projects I’ve worked on recently:<br />
-        <a href="https://react-hooks-6af17.firebaseapp.com/">Todo App</a><br />
-        <a href="https://react-quiz-b00d2.firebaseapp.com/">React Quiz</a><br />
-        <a href="https://git-repo-searcher.herokuapp.com/"
-          >Github user searcher</a
-        ><br />
-        <a href="https://macbaren-blog.web.app/">Personal Blog Angular</a>
-      </p>
-
-      <h3>Languages</h3>
-
-      <ul>
-        <li>Belarusian - native</li>
-        <li>Russian - proficient</li>
-        <li>English - B1</li>
-      </ul>
-      <p>
-        Want to see more? Email me<br />
-        macbaren123@gmail.com
-      </p>
-
-      <hr />
-    </section>
-
-    <footer>
-      <p>
-        Interested in collaborating or investing?
-        <br />
-        I’m always open to discussing product design work or partnership opportunities.
-        <br />
-        <a href="https://www.linkedin.com/in/andrey-macbaren/" target="_blank"
-          ><img alt="" height="30" src="images/linkedin.png?raw=true" /></a
-        >&nbsp;&nbsp;
-        <a href="https://twitter.com/macbarenI" target="_blank"
-          ><img alt="" height="30" src="images/twitter.png?raw=true" /></a
-        >&nbsp;&nbsp;
-        <a href="https://t.me/macbaren124" target="_blank"
-          ><img alt="" height="30" src="images/telegram.png?raw=true" /></a
-        >&nbsp;&nbsp;
-        <a href="https://www.codewars.com/users/Macbaren" target="_blank"
-        ><img alt=""
-          height="30"
-          src="https://www.codewars.com/users/Macbaren/badges/micro" /></a
-        >&nbsp;&nbsp;
-      </p>
-      <p>
-        <a href="https://rs.school/js/" target="_blank"
-          ><img alt="" height="30" src="https://rs.school/images/rs_school_js.svg?raw=true"/></a
-        >&nbsp;&nbsp;
-      </p>
-    <p>
-      Handcrafted by me (c)
-      <a href="https://github.com/Macbaren">Macbaren</a>
-      2021
-    </p>
-    </footer>
   </body>
 </html>

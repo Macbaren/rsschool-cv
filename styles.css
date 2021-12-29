@@ -7,11 +7,103 @@ td {
   padding: 0.4rem;
 }
 
+header {
+  overflow: hidden;
+}
+
 footer > p {
   text-align: center;
 }
 
+iframe {
+  width: 40%;
+}
+
+.main p {
+  text-align: justify;
+}
+
+p {
+  box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+  background-color: antiquewhite;
+  padding: 1rem;
+}
+
+.container > div {
+  padding: 2rem;
+}
+
+.side {
+  text-align: center;
+  background-color: rgb(204, 205, 206);
+  background-clip: border-box;
+  border-radius: 0.3rem;
+  width: 30%;
+}
+
 .avatar {
   width: 8rem;
-  float: right;
+}
+
+@media screen and (max-width: 50em) {
+  p,
+  th,
+  td,
+  li,
+  h1,
+  h2,
+  h3,
+  code {
+    font-size: 0.7em;
+  }
+  .container > div {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  p,
+  th,
+  td,
+  li,
+  h1,
+  h2,
+  h3,
+  code {
+    font-size: 0.5em;
+  }
+  .avatar,
+  .cw {
+    width: 6rem;
+  }
+  .container > div {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  p,
+  th,
+  td,
+  li,
+  h1,
+  h2,
+  h3,
+  code {
+    font-size: 0.3em;
+  }
+  .avatar,
+  .cw {
+    width: 4rem;
+  }
 }
