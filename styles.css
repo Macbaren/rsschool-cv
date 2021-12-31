@@ -29,6 +29,11 @@ p {
   max-width: 100%;
 }
 
+ul {
+  text-align: start;
+  padding-left: 1rem;
+}
+
 .container {
   display: flex;
   flex-direction: row;
